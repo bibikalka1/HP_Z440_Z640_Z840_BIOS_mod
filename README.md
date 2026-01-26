@@ -13,7 +13,8 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 For now, all the relevant discussion took place in 2 main threads:
 
-https://github.com/bibikalka1/HP_Z420_Z620_Z820_BOOTBLOCK2013_BIOS_mod/issues/3
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
+
 https://github.com/LongSoft/UEFITool/issues/446
 
 The working Resizable Bar (ReBar) report is here:
