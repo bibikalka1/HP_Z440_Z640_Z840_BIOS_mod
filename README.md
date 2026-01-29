@@ -27,7 +27,7 @@ https://github.com/xCuri0/ReBarUEFI/issues/11#issuecomment-3797767659
 
 -Dump the full 16MB BIOS with the chip clip
 
--Run a script to mod your BIOS with the ReBar functionality (**Under construction - hopefully done by early Feb**)
+-Run a script to mod your BIOS with the ReBar functionality (**Under construction - hopefully done by early Feb 2026**)
 
 -Flash the full 16MB modded BIOS to the chip with the clip
 
