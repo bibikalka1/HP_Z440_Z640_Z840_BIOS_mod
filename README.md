@@ -23,7 +23,7 @@ https://github.com/xCuri0/ReBarUEFI/issues/11#issuecomment-3797767659
 
 **Brief outline of the BIOS modding procedure**
 
--Upgrade/downgrade your BIOS to version 02.61 , use stock HP sp146166.exe file
+-Upgrade/downgrade your BIOS to version 02.61 (use stock HP sp146166.exe), or 02.62 (use stock HP sp151054.exe)
 
 -Dump the full 16MB BIOS with the chip clip
 
