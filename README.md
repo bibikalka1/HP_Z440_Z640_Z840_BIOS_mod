@@ -20,4 +20,11 @@ https://github.com/LongSoft/UEFITool/issues/446
 The working Resizable Bar (ReBar) report is here:
 https://github.com/xCuri0/ReBarUEFI/issues/11#issuecomment-3797767659
 
+**Brief outline of the BIOS modding procedure**
+
+-Upgrade/downgrade your BIOS to version 02.61 , stock HP spXXXXXX file
+-Dump the full 16MB BIOS with the chip clip
+-Run a script to mod your BIOS with the ReBar (**Under construction - hopefully done by early Feb**)
+-Flash the full 16MB modded BIOS to the chip with the clip
+
 
