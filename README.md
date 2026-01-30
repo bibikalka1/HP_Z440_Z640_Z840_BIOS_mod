@@ -13,7 +13,8 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 **Brief outline of the BIOS modding procedure**
 
--If you currently have some unique and rare BIOS version (older than version 2.31), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, you don't need the clip for this. I would appreciate if you do this and share the dump with me. See this for details on how to do the DOS dump:
+-If you currently have some unique and rare BIOS version (older than version 2.31), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, you don't need the clip for this. I would appreciate if you do this and share the dump with me. Use the provided IMET9_2026.zip file instead of the older one. If the full BIOS dump fails, the DOS command to merge all pieces into the full BIOS file is "copy /b FDOO11.BIN + GBEO11.BIN + PDRO11.BIN + MEOO11.BIN + BIOS11.BIN backup_full.bin"
+See this for details on how to do the DOS dump:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1#issuecomment-3802262168
 
