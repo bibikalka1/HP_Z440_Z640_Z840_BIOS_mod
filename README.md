@@ -33,13 +33,8 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 **BIOS backup with a bootable USB**
 
-Create a bootable DOS USB, unpack IMET9_2026.zip, turn off, move green pwd jumper to the undocumented BB E14 jumper, move the FDO jumper to the other position, boot to DOS USB. In DOS type this - [cd imet9; backup 11]. Put jumpers back as they were, reboot back to your main OS. See this picture where the pwd jumper is empty and BB E14 jumper is installed, for some reason they swapped the actual green connector with the black BBR one. If the full BIOS dump fails, the DOS command to merge all pieces into the full BIOS file is "copy /b FDOO11.BIN + GBEO11.BIN + PDRO11.BIN + MEOO11.BIN + BIOS11.BIN backup_full.bin". @Pl4nky was able to dump all pieces separately, but the entire dump at once failed for some reason.
- ( picture credit @antiqua https://forum.overclockers.ua/viewtopic.php?f=3&t=218885&p=3467242#p3467242 )
- ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/Zx40_jumpers.jpg)
-
-Here is another picture of Z440 board with the jumpers and their colors in the default position
-(picture credit @PhilYHC https://www.techpowerup.com/forums/threads/hp-workstations-owners-club.254315/page-14#post-5253328 )
- ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/z440_board.jpg)
+Create a bootable DOS USB, unpack IMET9_2026.zip, turn off. Open the side cover and locate what is known as the ME/AMT Flash Override jumper (sometimes referred to as the FDO - Flash Descriptor Override - jumper). Move the jumper from the current 2 out of 3 pins to the other 2 pins. Boot to DOS USB. In DOS type this - [cd imet9; backup 11]. Put the jumper back as they were, reboot back to your main OS. You will not see the ME dump if you did not move the jumper to the unlock position. If the full BIOS dump fails yet pieces succeed, the DOS command to merge all pieces into the full BIOS file is "copy /b FDOO11.BIN + GBEO11.BIN + PDRO11.BIN + MEOO11.BIN + BIOS11.BIN backup_full.bin". @Pl4nky was able to dump all pieces separately, but the entire dump at once failed for some reason.
+ 
 
 See some discussion in here:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
