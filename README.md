@@ -13,7 +13,12 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 **Brief outline of the BIOS modding procedure**
 
--Upgrade/downgrade your BIOS to version 02.61 (use stock HP sp146166.exe), or (NO GO YET) 02.62 (use stock HP sp151054.exe). If you really desire version 02.62 - dump your full BIOS with it, and reach out. We can make it work too.
+-If you currently have some unique and rare BIOS version (older than version 2.31), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, you don't need the clip for this. I would appreciate if you do this and share the dump with me. See this for details on how to do the DOS dump:
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1#issuecomment-3802262168
+
+
+-Upgrade/downgrade your BIOS to version 02.61 (use stock HP sp146166.exe), or (NO GO YET) 02.62 (use stock HP sp151054.exe). If you really desire version 02.62, stay put. I will have an update to the method soon to cover any and all BIOS versions that people may desire.
 
 -Dump the full 16MB BIOS with the chip clip, the instructions are way beyond the scope of this page. See pages like this https://libreboot.org/docs/install/spi.html , also check out the local data dump that has a lot of good pointers regarding the ZX40 hardware: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
 
