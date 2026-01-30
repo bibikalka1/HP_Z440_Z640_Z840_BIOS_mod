@@ -13,15 +13,11 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 **Brief outline of the BIOS modding procedure**
 
--If you currently have some unique and rare BIOS version (older than version 2.31), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, you don't need the clip for this. I would appreciate if you do this and share the dump with me. Use the provided IMET9_2026.zip file instead of the older one. If the full BIOS dump fails, the DOS command to merge all pieces into the full BIOS file is "copy /b FDOO11.BIN + GBEO11.BIN + PDRO11.BIN + MEOO11.BIN + BIOS11.BIN backup_full.bin"
-See this for details on how to do the DOS dump:
-https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
-https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1#issuecomment-3802262168
-
+-If you currently have some unique and rare BIOS version (older than version 2.31), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, see the section "BIOS backup with a bootable USB" below. I would appreciate if you do this and share the dump with me.
 
 -Upgrade/downgrade your BIOS to version 02.61 (use stock HP sp146166.exe), or (NO GO YET) 02.62 (use stock HP sp151054.exe). If you really desire version 02.62, stay put. I will have an update to the method soon to cover any and all BIOS versions that people may desire.
 
--Dump the full 16MB BIOS with either the DOS scripts plus the ME jumper (use IMET9_2026.zip pack), or the chip clip. The instructions for the chip clip method are way beyond the scope of this page. See pages like this https://libreboot.org/docs/install/spi.html , also check out the local data dump that has a lot of good pointers regarding the ZX40 hardware: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
+-Dump the full 16MB BIOS with either DOS (see the section "BIOS backup with a bootable USB" below), or the chip clip. The instructions for the chip clip method are way beyond the scope of this page. See pages like this https://libreboot.org/docs/install/spi.html , also check out the local data dump that has a lot of good pointers regarding the ZX40 hardware: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
 
 -Run the provided PowerShell script to mod your BIOS with the ReBar functionality, you need to download the script and the reference bios file (patch_bios_v01.ps1 & reference261_v1.zip, unpack zip, put both in the same directory). The 2nd file in the arguments provided to the PowerShell script is your bios dump (backup.bin). I provided a copy of @Pl4nky 's original BIOS dump which will be modded properly by the script, use it for testing if confused. See  the screenshot on what you should see, of course with YOUR backup.bin file:
 ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/patch_in_ps_run.png)
@@ -34,6 +30,15 @@ https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1#issuecomment-3
 ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/rebar_enabled.png)
 
 -Good luck!
+
+**BIOS backup with a bootable USB**
+
+Create a bootable DOS USB, unpack IMET9_2026.zip, turn off, move green pwd jumper to the undocumented BB E14 jumper, move the FDO jumper to the other position, boot to DOS USB. In DOS type this - [cd imet9; backup 11]. Put jumpers back as they were, reboot back to your main OS. See this picture where the pwd jumper is empty and BB E14 jumper is installed, for some reason they swapped the actual green connector with the black BBR one. If the full BIOS dump fails, the DOS command to merge all pieces into the full BIOS file is "copy /b FDOO11.BIN + GBEO11.BIN + PDRO11.BIN + MEOO11.BIN + BIOS11.BIN backup_full.bin". @Pl4nky was able to dump all pieces separately, but the entire dump at once failed for some reason.
+ ( picture credit @antiqua https://forum.overclockers.ua/viewtopic.php?f=3&t=218885&p=3467242#p3467242 )
+
+See some discussion in here:
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1#issuecomment-3802262168
 
 **Legacy info**
 
