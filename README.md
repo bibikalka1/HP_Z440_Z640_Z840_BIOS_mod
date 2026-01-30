@@ -32,7 +32,8 @@ https://github.com/xCuri0/ReBarUEFI/issues/11#issuecomment-3797767659
 
 -Flash the full 16MB modded BIOS from the prior step (backup_mod.bin) to the chip with the clip, just like the first step, only in reverse
 
--Follow all instructions on ReBar page (https://github.com/xCuri0/ReBarUEFI). Your BIOS has been modded, skip modding, but all the other details are required. When done, do check that ReBar is actually enabled.
+-Follow all instructions on ReBar page (https://github.com/xCuri0/ReBarUEFI). Your BIOS has been modded, skip modding, but all the other details are required. When done, do check that ReBar is actually enabled. Something like this (credit to @Pl4nky):
+![Alt text](https://private-user-images.githubusercontent.com/12206675/540339509-d57f9610-d2e7-4ac7-a4f1-0d77b8badc07.PNG)
 
 -Good luck!
 
