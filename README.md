@@ -11,16 +11,6 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 @nochnik89 of overclockers.ua crew for misc flashing instructions, and his famous turbo unlocked v1.65 BIOS that powered so many machines
 
-For now, all the relevant discussion took place in 2 main threads:
-
-https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
-
-https://github.com/LongSoft/UEFITool/issues/446
-
-The working Resizable Bar (ReBar) report is here:
-https://github.com/xCuri0/ReBarUEFI/issues/11#issuecomment-3797767659
-
-
 **Brief outline of the BIOS modding procedure**
 
 -Upgrade/downgrade your BIOS to version 02.61 (use stock HP sp146166.exe), or (NO GO YET) 02.62 (use stock HP sp151054.exe)
@@ -37,4 +27,14 @@ https://github.com/xCuri0/ReBarUEFI/issues/11#issuecomment-3797767659
 
 -Good luck!
 
+**Legacy info**
+
+The relevant discussion took place in 2 main threads:
+
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
+
+https://github.com/LongSoft/UEFITool/issues/446
+
+The working Resizable Bar (ReBar) report is here:
+https://github.com/xCuri0/ReBarUEFI/issues/11#issuecomment-3797767659
 
