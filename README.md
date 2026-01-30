@@ -27,7 +27,8 @@ https://github.com/xCuri0/ReBarUEFI/issues/11#issuecomment-3797767659
 
 -Dump the full 16MB BIOS with the chip clip
 
--Run a script to mod your BIOS with the ReBar functionality (**Under construction - hopefully done by early Feb 2026**)
+-Run a PowerShell script to mod your BIOS with the ReBar functionality, you need to download the script and the reference bios file (patch_bios_v01.ps1 & reference261_v1.zip)
+<img width=“964” alt=“PowerShell output” src="https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/patch_in_ps_run.png">
 
 -Flash the full 16MB modded BIOS to the chip with the clip
 
