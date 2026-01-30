@@ -9,7 +9,7 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 @Pl4nky of GitHub for testing all kinds of modifications on his system
 
-@nochnik89 of overclockers.ua crew for misc flashing instructions, and his famous turbo unlocked v1.65 BIOS that powered so many machines in Ukraine
+@nochnik89 of overclockers.ua crew for misc flashing instructions, and his famous turbo unlocked v1.65 BIOS that powered so many machines
 
 For now, all the relevant discussion took place in 2 main threads:
 
