@@ -37,6 +37,10 @@ Create a bootable DOS USB, unpack IMET9_2026.zip, turn off, move green pwd jumpe
  ( picture credit @antiqua https://forum.overclockers.ua/viewtopic.php?f=3&t=218885&p=3467242#p3467242 )
  ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/Zx40_jumpers.jpg)
 
+Here is another picture of Z440 board with the jumpers and their colors in the default position
+(picture credit @PhilYHC https://www.techpowerup.com/forums/threads/hp-workstations-owners-club.254315/page-14#post-5253328 )
+ ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/Zx40_jumpers.jpg)
+
 See some discussion in here:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1#issuecomment-3802262168
