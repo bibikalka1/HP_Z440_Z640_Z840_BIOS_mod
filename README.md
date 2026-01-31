@@ -13,7 +13,7 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 **Brief outline of the BIOS modding procedure**
 
--If you currently have some unique and rare BIOS version (older than version 2.31), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, see the section "BIOS backup with a bootable USB" below. I would appreciate if you do this and share the dump with me.
+-If you currently have some unique and rare BIOS version (older than version 2.31), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, see the section "BIOS backup with a bootable USB" below. You don't even need to move the ME/AMT jumper, I just need to get your BIOS11.BIN file, and don't care about ME. I would appreciate if you do this and share BIOS11.BIN with me!
 
 -Upgrade/downgrade your BIOS to version 02.61 (use stock HP sp146166.exe), or (NO GO YET) 02.62 (use stock HP sp151054.exe). If you really desire version 02.62, stay put. I will have an update to the method soon to cover any and all BIOS versions that people may desire.
 
