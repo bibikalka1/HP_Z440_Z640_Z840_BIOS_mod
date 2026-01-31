@@ -1,4 +1,4 @@
-A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z640, and Z840. The flashing procedure is done with the SOIC8 clip, and no desoldering. No need to remove the motherboard either. The modded BIOS adds the ReSizable Bar feature. The turbo unlock on v3 Xeons is not working yet - head over here and leave a note if you would like this feature to work: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/3).
+A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z640, and Z840. The flashing procedure is done with the SOIC8 clip, and no desoldering. No need to remove the motherboard either. The modded BIOS adds the ReSizable Bar feature. The turbo unlock on v3 Xeons is not working yet - head over here and leave a note if you would like this feature to work: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/3
 
 
 **Disclaimer: I am not responsible if you do brick your computer - you are doing this at your own risk. Keep plenty of backups. Be very careful with the SOIC8 clip, and try not to short anything**
@@ -32,6 +32,8 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 -Good luck!
 
 **BIOS backup with a bootable USB**
+
+If you are going to flash the modded BIOS with a clip, you might as well read it with the clip. The procedure here is an option if for some reason you want to dump your current BIOS without going the clip route (yet).
 
 Create a bootable DOS USB, unpack IMET9_2026.zip, turn off your Zx40. Open the side cover and locate what is known as the ME/AMT Flash Override jumper (sometimes referred to as the FDO - Flash Descriptor Override - jumper). Move the jumper from the current 2 out of 3 pins to the other 2 pins. Boot to DOS USB. In DOS type this - [cd imet9; backup 11]. Put the jumper back as it was before, reboot back to your main OS. You will not see the ME dump if you did not move the ME/AMT jumper to the unlock position. If the full BIOS dump fails yet pieces succeed, the DOS command to merge all pieces into the full BIOS file is "copy /b FDOO11.BIN + GBEO11.BIN + PDRO11.BIN + MEOO11.BIN + BIOS11.BIN backup_full.bin". @Pl4nky was able to dump all pieces separately, but the entire dump at once failed for some reason in the same session.
  
