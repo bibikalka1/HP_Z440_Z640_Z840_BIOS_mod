@@ -15,10 +15,10 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 The main WIP thread got very long, and was closed.
 
-If you have generic BIOS flashing or modding questions about ZX40s, please post them here: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/6
+If you have generic BIOS flashing or modding questions about ZX40s, please post them here: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/5
 
 If your Intel card refuses to boot after ReBar mod was applied, with ReBar value enabled, please post your questions here:
-https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/5
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/6
 
 If your Intel card has non-ReBar issues, please post in this thread:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
