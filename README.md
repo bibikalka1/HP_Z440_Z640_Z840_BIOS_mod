@@ -11,6 +11,19 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 @nochnik89 of overclockers.ua crew for misc flashing instructions, and his famous turbo unlocked v1.65 BIOS that powered so many machines
 
+**Questions and issues**
+
+The main WIP thread got very long, and was closed.
+
+If you have generic BIOS flashing or modding questions about ZX40s, please post them here: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/6
+
+If your Intel card refuses to boot after ReBar mod was applied, with ReBar value enabled, please post your questions here:
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/5
+
+If your Intel card has non-ReBar issues, please post in this thread:
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
+
+
 **Brief outline of the BIOS modding procedure**
 
 -If you currently have some unique and rare BIOS version 2.yz (older than version 2.31 such as 2.1x or 2.2x), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, see the section "BIOS backup with a bootable USB" below. You don't even need to move the ME/AMT jumper, I just need to get your BIOS11.BIN file, and don't care about ME. I would appreciate if you do this and share BIOS11.BIN with me here https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/4 or on Reddit. Or maybe you even have the official HP sp file for the old version? Please upload!
