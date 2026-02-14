@@ -23,6 +23,9 @@ https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/6
 If your Intel card has non-ReBar issues, please post in this thread:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
 
+**A strangely cheap SOIC8 clip** 
+(noted on 2/13/2026 - $2.40 or less for the US buyers)
+https://www.aliexpress.us/item/3256808603372920.html
 
 **Brief outline of the BIOS modding procedure**
 
