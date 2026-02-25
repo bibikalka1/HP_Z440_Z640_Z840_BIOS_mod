@@ -5,7 +5,7 @@ A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z64
 
 **Credits:**
 
-@NikolajSchlej of GitHub for removing modded BIOS boot protection. He wrote a nice article (in Russian) on how the protection got removed : https://habr.com/en/articles/989208/
+@NikolajSchlej of GitHub for removing modded BIOS boot protection. He wrote a nice and detailed article (in Russian) on how he removed the protection: https://habr.com/en/articles/989208/
 
 @Pl4nky of GitHub for testing all kinds of modifications on his system, and losing a few SOIC8 clips to wear and tear!
 
