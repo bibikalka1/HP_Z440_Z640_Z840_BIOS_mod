@@ -31,7 +31,7 @@ https://sawyershepherd.org/post/solderless-ch341ab-fix-5v-to-33v-data-lines/
 
 **Brief outline of the BIOS modding procedure**
 
--If you currently have some unique and rare BIOS version 2.yz (older than version 2.31 such as 2.1x or 2.2x), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, see the section "BIOS backup with a bootable USB" below. You don't even need to move the ME/AMT jumper, I just need to get your BIOS11.BIN file, and don't care about ME. I would appreciate if you do this and share BIOS11.BIN with me here https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/4 or on Reddit. Or maybe you even have the official HP sp file for the old version? Please upload!
+-If you currently have some unique and rare BIOS version 2.yz (older than version 2.31 such as 2.1x or 2.2x), or version 1.yz (older than 1.62), please dump it before doing any BIOS upgrading. You can dump it with the DOS script, see the section "BIOS backup with a bootable USB" below. You don't even need to move the ME/AMT jumper, I just need to get your BIOS11.BIN file, and don't care about ME. I would appreciate if you do this and share BIOS11.BIN with me here https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/4 or on Reddit. Or maybe you even have the official HP sp file for the old version? Please upload!
 
 -Upgrade/downgrade your BIOS to version 02.61 (use stock HP sp146166.exe), or (NO GO YET) 02.62 (use stock HP sp151054.exe). If you really desire version 02.62, stay put. I will have an update to the method soon to cover any and all BIOS versions that people may desire.
 
