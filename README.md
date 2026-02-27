@@ -1,5 +1,7 @@
 A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z640, and Z840. The flashing procedure is done with the SOIC8 clip, and no desoldering. No need to remove the motherboard either. The modded BIOS adds the ReSizable Bar feature. The turbo unlock on v3 Xeons is not working yet - head over here and leave a note if you would like this feature to work: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/3
 
+**Feb 26th 2026 update:** there is turbo unlock testing in progress, if you'd like to try the new mod, head over to this post: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/3#issuecomment-3970389046
+
 
 **Disclaimer: I am not responsible if you do brick your computer - you are doing this at your own risk. Keep plenty of backups. Be very careful with the SOIC8 clip, and try not to short anything**
 
