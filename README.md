@@ -32,9 +32,12 @@ https://www.aliexpress.us/item/3256808603372920.html
 Check voltage on the MISO/MOSI lines before proceeding:
 https://sawyershepherd.org/post/solderless-ch341ab-fix-5v-to-33v-data-lines/
 
-**Once you succeed** 
+**Flashing mechanics step by step** 
 
-If you have a few minutes, please document your actual flashing steps for the benefit of others:
+See the wiki here (kindly started by @Pl4nky):
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/wiki/Specific-BIOS-flashing-instructions:
+
+If you have questions or additional discussion, go here:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/8
 
 **Brief outline of the BIOS modding procedure**
