@@ -26,12 +26,14 @@ If your Intel card has non-ReBar issues, please post in this thread:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
 
 **A strangely cheap SOIC8 clip** 
+
 (noted on 2/13/2026 - $2.40 or less for the US buyers. Mine has arrived, it says v1612 on it below "CH341a /Mini programmer" on the back side)
 https://www.aliexpress.us/item/3256808603372920.html
 Check voltage on the MISO/MOSI lines before proceeding:
 https://sawyershepherd.org/post/solderless-ch341ab-fix-5v-to-33v-data-lines/
 
 **Once you succeed** 
+
 If you have a few minutes, please document your actual flashing steps for the benefit of others:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/8
 
