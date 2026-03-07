@@ -31,6 +31,10 @@ https://www.aliexpress.us/item/3256808603372920.html
 Check voltage on the MISO/MOSI lines before proceeding:
 https://sawyershepherd.org/post/solderless-ch341ab-fix-5v-to-33v-data-lines/
 
+**Once you succeed** 
+If you have a few minutes, please document your actual flashing steps for the benefit of others:
+https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/8
+
 **Brief outline of the BIOS modding procedure**
 
 -If you currently have some unique and rare BIOS version 2.yz (older than version 2.31 such as 2.1x or 2.2x), or version 1.yz (older than 1.62), please dump it before doing any BIOS upgrading. I am specifically interested in versions that ARE NOT currently available on the HP site as sp packages. You can dump your bios with the DOS script, see the section "BIOS backup with a bootable USB" below. You don't even need to move the ME/AMT jumper, I just need to get your BIOS11.BIN file, and don't care about ME. I would appreciate if you do this and share BIOS11.BIN with me here https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/4 or on Reddit. Or maybe you even have the official HP sp file for the old version? Please upload!
