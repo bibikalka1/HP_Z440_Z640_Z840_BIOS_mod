@@ -1,4 +1,4 @@
-A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z640, and Z840. The flashing procedure is done under Windows (or with the SOIC8 clip). No need to remove the motherboard either. The modded BIOS adds the ReSizable Bar feature. The turbo unlock on v3 Xeons is not working yet - head over here and leave a note if you would like this feature to work: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/3
+A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z640, and Z840. The flashing procedure is done under Windows without any additional hardware (or with the SOIC8 clip). No need to remove the motherboard either. The modded BIOS adds the ReSizable Bar feature. The turbo unlock on v3 Xeons is not working yet - head over here and leave a note if you would like this feature to work: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/3
 
 **Sept 11th 2026 update:** a user @Tobim6 found a way to flash the modded BIOS without using the clip, and this method is included below
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/9#issuecomment-5485053986
@@ -32,18 +32,18 @@ https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
 
 **Brief outline of the BIOS modding procedure**
 
--If you currently have some unique and rare BIOS version 2.yz (older than version 2.31 such as 2.1x or 2.2x), or version 1.yz (older than 1.62), please dump it before doing any BIOS upgrading. I am specifically interested in versions that ARE NOT currently available on the HP site as sp packages. You can dump your bios under Windows or with the DOS script, see the section "BIOS backup with a bootable USB" below. You don't even need to move the ME/AMT jumper, I just need to get your BIOS11.BIN file, and don't care about ME. I would appreciate if you do this and share BIOS11.BIN with me here https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/4 or on Reddit. Or maybe you even have the official HP sp file for the old version? Please upload!
+-If you currently have some unique and rare BIOS version 2.yz (older than version 2.31 such as 2.1x or 2.2x), or version 1.yz (older than 1.62), please dump it before doing any BIOS upgrading. I am specifically interested in versions that ARE NOT currently available on the HP site as sp packages. You can dump your bios under Windows or with the DOS script, see the sections "BIOS flashing under Windows" or "BIOS backup with a bootable USB" below. You don't even need to move the ME/AMT jumper, I just need to get your BIOS11.BIN file, and don't care about ME. I would appreciate if you do this and share BIOS11.BIN with me here https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/4 or on Reddit. Or maybe you even have the official HP sp file for the old version? Please upload!
 
 -Upgrade/downgrade your BIOS to version 02.61 (use stock HP sp146166.exe), or (NO GO YET) 02.62 (use stock HP sp151054.exe). If you really desire version 02.62, stay put. I will have an update to the method soon to cover any and all BIOS versions that people may desire.
 
--Dump the full 16MB BIOS under Windows, or within DOS (see the section "BIOS backup with a bootable USB" below), or the chip clip. The instructions for the chip clip method are way beyond the scope of this page. See pages like this https://libreboot.org/docs/install/spi.html , also check out the local data dump that has a lot of good pointers regarding the ZX40 hardware: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
+-Dump the full 16MB BIOS under Windows (see the section "BIOS flashing under Windows"), or within DOS (see the section "BIOS backup with a bootable USB" below), or the chip clip. The instructions for the chip clip method are way beyond the scope of this page. See pages like this https://libreboot.org/docs/install/spi.html , also check out the local data dump that has a lot of good pointers regarding the ZX40 hardware: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/1
 
 -Run the provided PowerShell script to mod your BIOS with the ReBar functionality, you need to download the script and the reference bios file (patch_bios_v01.ps1 & reference261_v1.zip, unpack zip, put both in the same directory). The 2nd file in the arguments provided to the PowerShell script is your bios dump (backup.bin). I provided a copy of @Pl4nky 's original BIOS dump which will be modded properly by the script, use it for testing if confused. See  the screenshot on what you should see, of course with YOUR backup.bin file:
 ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/patch_in_ps_run.png)
 
 -If you are curious, you can QC the modded bios file with something like the UEFI tool (https://github.com/LongSoft/UEFITool/releases), and different binary utilities, such as WinMerge or HxD2500. If you want to add / remove BIOS functions, probably best to use the MMTool_a4.exe tool, it appears to be reasonably gentle.
 
--Flash the full 16MB modded BIOS from the prior step (backup_mod.bin) to the chip with the clip, just like the first step, only in reverse
+-Flash the full 16MB modded BIOS from the prior step (backup_mod.bin) to the BIOS chip, just like the first step, only in reverse
 
 -Follow all instructions on ReBar page (https://github.com/xCuri0/ReBarUEFI). Your BIOS has been modded, skip modding, but all the other details are required. When done, do check that ReBar is actually enabled. Something like this (credit to @Pl4nky):
 ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/rebar_enabled.png)
@@ -53,17 +53,17 @@ https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
 **BIOS flashing under Windows (thanks to @Tobim6)**
 
 Shut down your machine
-Put ME/AMT flash override jumper in top position (top 2 pins) to allow write
-Put green password jumper to E14.
+Put the ME/AMT flash override jumper in top position (top 2 pins) to allow write
+Put the green password jumper to E14.
 Boot up
 download and extract ME.System.Tools.v9.1.r7 (from here or alternatives https://mega.nz/folder/qdVAyDSB#FLCPaDVIsPYiy2TAUjD7RQ)
 Go to Flash Programming Tool > WIN64
 open administrator cmd there.
-fptw64.exe -d backup.bin for dump,
+[fptw64.exe -d backup.bin] for dump,
 modify your full BIOS in PowerShell as described above,
 before writing the BIOS back you need to put PC into sleep and then wake it up. Do not skip this. This will open up the BIOS region for writing.
 Flash your modded BIOS copy back:
-fptw64.exe -f file.bin for flash.
+[fptw64.exe -f file.bin] for flash.
 Turn off the computer, put the 2 jumpers back to the original position, reboot.
 (Please ignore the additional steps in the Reddit post by a user who barely managed to run this procedure on his machine, then turned around and posted a HOWTO on Reddit)
 
