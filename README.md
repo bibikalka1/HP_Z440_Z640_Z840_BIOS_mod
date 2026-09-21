@@ -53,18 +53,29 @@ https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
 **BIOS flashing under Windows (thanks to @Tobim6)**
 
 Shut down your machine
+
 Put the ME/AMT flash override jumper in top position (top 2 pins) to allow write
+
 Put the green password jumper to E14.
+
 Boot up
+
 download and extract ME.System.Tools.v9.1.r7 (from here or alternatives https://mega.nz/folder/qdVAyDSB#FLCPaDVIsPYiy2TAUjD7RQ)
+
 Go to Flash Programming Tool > WIN64
 open administrator cmd there.
-[fptw64.exe -d backup.bin] for dump,
+
+Run [fptw64.exe -d backup.bin] for dump,
+
 modify your full BIOS in PowerShell as described above,
+
 before writing the BIOS back you need to put PC into sleep and then wake it up. Do not skip this. This will open up the BIOS region for writing.
-Flash your modded BIOS copy back:
-[fptw64.exe -f file.bin] for flash.
+
+Flash your modded BIOS copy back: 
+Run [fptw64.exe -f file.bin] for flash.
+
 Turn off the computer, put the 2 jumpers back to the original position, reboot.
+
 **(Please ignore the additional steps in the Reddit post by a user who barely managed to run this procedure on his machine without bricking it, then turned around and posted a HOWTO on Reddit)**
 
 **BIOS backup with a bootable USB**
