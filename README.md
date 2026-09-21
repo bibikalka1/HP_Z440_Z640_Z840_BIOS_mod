@@ -30,6 +30,9 @@ https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/6
 If your Intel card has non-ReBar issues, please post in this thread:
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
 
+If you would like to run your workstation in the headless node, see this for instructions on how to enable that:
+https://www.reddit.com/r/homelab/comments/1it3f3o/hp_z440_headless_boot/
+
 **Brief outline of the BIOS modding procedure**
 
 -If you currently have some unique and rare BIOS version 2.yz (older than version 2.31 such as 2.1x or 2.2x), or version 1.yz (older than 1.62), please dump it before doing any BIOS upgrading. I am specifically interested in versions that ARE NOT currently available on the HP site as sp packages. You can dump your bios under Windows or with the DOS script, see the sections "BIOS flashing under Windows" or "BIOS backup with a bootable USB" below. You don't even need to move the ME/AMT jumper, I just need to get your BIOS11.BIN file, and don't care about ME. I would appreciate if you do this and share BIOS11.BIN with me here https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/4 or on Reddit. Or maybe you even have the official HP sp file for the old version? Please upload!
