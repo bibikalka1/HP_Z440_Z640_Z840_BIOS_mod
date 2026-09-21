@@ -1,4 +1,4 @@
-A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z640, and Z840. The flashing procedure is done under Windows without any additional hardware (or with the SOIC8 clip). No need to remove the motherboard either. The modded BIOS adds the ReSizable Bar feature. The turbo unlock on v3 Xeons is not working yet - head over here and leave a note if you would like this feature to work: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/3
+A guide and collection of resources on how to mod and flash BIOS to HP Z440, Z640, and Z840. The flashing procedure is done under Windows without any additional hardware (or with the SOIC8 clip if you are bricked). No need to remove the motherboard either. The modded BIOS adds the ReSizable Bar feature. The turbo unlock on v3 Xeons is not working yet - head over here and leave a note if you would like this feature to work: https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/3
 
 **Sept 11th 2026 update:** a user @Tobim6 found a way to flash the modded BIOS without using the clip, and this method is included below
 https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/9#issuecomment-5485053986
@@ -45,7 +45,7 @@ https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/issues/7
 
 -Flash the full 16MB modded BIOS from the prior step (backup_mod.bin) to the BIOS chip, just like the first step, only in reverse
 
--Follow all instructions on ReBar page (https://github.com/xCuri0/ReBarUEFI). Your BIOS has been modded, skip modding, but all the other details are required. When done, do check that ReBar is actually enabled. Something like this (credit to @Pl4nky):
+-Follow all instructions on ReBar page (https://github.com/xCuri0/ReBarUEFI) including the 4G/CSM/ReBarState items. Your BIOS has been modded, skip the modding section on the ReBar page, but all the other details are required. When done, do check that ReBar is actually enabled. Something like this (credit to @Pl4nky):
 ![Alt text](https://github.com/bibikalka1/HP_Z440_Z640_Z840_BIOS_mod/blob/main/rebar_enabled.png)
 
 -Good luck!
