@@ -65,7 +65,7 @@ before writing the BIOS back you need to put PC into sleep and then wake it up. 
 Flash your modded BIOS copy back:
 [fptw64.exe -f file.bin] for flash.
 Turn off the computer, put the 2 jumpers back to the original position, reboot.
-(Please ignore the additional steps in the Reddit post by a user who barely managed to run this procedure on his machine, then turned around and posted a HOWTO on Reddit)
+**(Please ignore the additional steps in the Reddit post by a user who barely managed to run this procedure on his machine without bricking it, then turned around and posted a HOWTO on Reddit)**
 
 **BIOS backup with a bootable USB**
 
